@@ -1,0 +1,11 @@
+<h1>
+   <%= @artist.name %>
+</h1>
+
+<h3><%= @artist.country %></h3>
+
+<%= image_tag(@artist.image)  %>
+
+<h2>Songs</h2>
+
+<%= @artist.songs.sort_by { |song| song.year } %>
