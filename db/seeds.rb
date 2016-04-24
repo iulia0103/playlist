@@ -1,11 +1,11 @@
 artists = [
-  ["Queen", "England", "queen.jpg"],
-  ["Scorpions", "Germany", "scorpions.jpg"],
-  ["Guns N`Roses", "America", "guns.jpg"]
+  ["Queen", "England", "queen.jpg", "logo_queen.jpg"],
+  ["Scorpions", "Germany", "scorpions.jpg", "logo_scorpions.jpg"],
+  ["Guns N`Roses", "America", "guns.jpg", "logo_guns.jpg"]
 ]
 
-artists.each do |name, country, image|
-  Artist.create(name: name, country: country, image: image)
+artists.each do |name, country, image, logo|
+  Artist.create(name: name, country: country, image: image, logo: logo)
 end
 
 
@@ -20,7 +20,7 @@ artist_songs["Queen"] = [
 artist_songs["Scorpions"] = [
   ["Still Loving You", 1984, "https://www.youtube.com/watch?v=7pOr3dBFAeY"],
   ["Rock you like a Hurricane", 1984, "https://www.youtube.com/watch?v=6yP1tcy9a10"],
-  ["Dust in the Wind", 1977, "https://www.youtube.com/watch?v=wO29FkM6LZM"]
+  ["Wind of Change", 1990, "https://www.youtube.com/watch?v=n4RjJKxsamQ"]
 ]
 
 artist_songs["Guns N`Roses"] = [

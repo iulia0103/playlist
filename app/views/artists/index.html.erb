@@ -1,5 +1,7 @@
+
 <h1>Artists</h1>
 
+
 <% @artists.each do |artist| %>
-    <p><%= link_to artist.name, artist %></p>
+    <p><%= link_to image_tag(artist.logo), artist %></p>
 <% end %>
