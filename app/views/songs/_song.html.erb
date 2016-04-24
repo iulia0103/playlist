@@ -3,5 +3,7 @@
 
     <p><%= song.title %></p>
 
+    <p>Added by: <%= link_to song.user.handle, user_songs_path( song.user ) %></p>
+
     <p><%= link_to "Listen", song %></p><br/>
 </div>
