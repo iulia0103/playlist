@@ -1,7 +1,10 @@
-<h1>
-   <%= @song.title %>
-</h1>
+<section class="container videoartist">
+  <div class="row text-center">
+    <h1><%= @song.title %></h1>
 
-<p><%= @song.artist.name %> </p>
-<p><%= @song.year %></p>
-<%= embed(@song.video) %>
+    <p>Band: <%= @song.artist.name %> </p>
+    <p>Year: <%= @song.year %></p>
+
+    <%= embed(@song.video) %>
+  </div>
+</section>
