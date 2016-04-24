@@ -8,4 +8,5 @@
 
 <h2>Songs</h2>
 
-<%= @artist.songs.sort_by { |song| song.year } %>
+<% songs = @artist.songs.sort_by { |song| song.year } %>
+<%= render songs, hide_artist: true %>
