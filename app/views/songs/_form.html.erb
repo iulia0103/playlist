@@ -1,0 +1,11 @@
+<%= form_for Song.new do |f| %>
+    <div class="input-group">
+      <p>Song title: <%= f.text_field :title, class: "form-control" %></p>
+      <p>Release year: <%= f.text_field :year, class: "form-control" %></p>
+      <p>Youtube URL: <%= f.text_field :video, class: "form-control" %></p>
+      <p>Artist: <%= f.text_field :artist_id, class: "form-control" %></p>
+      <p>Queen: 1, Scorpions: 2, Guns N`Roses: 3</p>
+      <br>
+      <p><%= f.submit "Add Song" %></p>
+    </div>
+<% end %>
