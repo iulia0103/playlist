@@ -1,10 +1,27 @@
 
-  header .container{
-    background: black;
-  }
+header {
+  background: #000000;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 90px;
+  z-index: 1;
+}
 
- .navbar li {
-  display: inline;
-  list-style: none;
-  color: white;
+.no-bullets {
+  list-style-type: none;
+}
+
+.text-center .navbar {
+  margin-top: 35px;
+ text-align: center;
+}
+
+.text-center .navbar li {
+ display: inline;
+ margin-right: 35px;
+ text-decoration: none;
+ text-transform: uppercase;
+ color: white;
 }
