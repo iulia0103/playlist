@@ -5,5 +5,10 @@
     <% @songs.each do |song| %>
       <p><%= link_to song.title, song %></p>
     <% end %>
+
+    <br><br>
+    <% if user_signed_in? %>
+      <h3><%= link_to "[New Song]", new_song_path %></h3>
+    <% end %>
   </div>
 </section>
