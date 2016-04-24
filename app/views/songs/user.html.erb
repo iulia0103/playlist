@@ -1,0 +1,12 @@
+<section class="container userprofile">
+  <div class="row text-center">
+
+    <h1><%= @user.handle %></h1>
+
+    <br>
+
+    <% @songs.each do |song| %>
+    <p><%= link_to song.title, song %></p>
+    <% end %>
+  </div>
+</section>

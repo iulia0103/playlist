@@ -1,5 +1,6 @@
 <%= form_for Song.new do |f| %>
     <div class="input-group">
+      <h1>Add a new Song</h1><br>
       <p>Song title: <%= f.text_field :title, class: "form-control" %></p>
       <p>Release year: <%= f.text_field :year, class: "form-control" %></p>
       <p>Youtube URL: <%= f.text_field :video, class: "form-control" %></p>

@@ -3,10 +3,12 @@
     <h1>Songs</h1>
 
     <% @songs.each do |song| %>
-      <p><%= link_to song.title, song %></p>
+      <h3><%= link_to song.title, song %></h3>
+      <p>Added by: <%= link_to song.user.handle, user_songs_path( song.user ) %></p>
+      <br>
     <% end %>
 
-    <br><br>
+    <br>
     <% if user_signed_in? %>
       <h3><%= link_to "[New Song]", new_song_path %></h3>
     <% end %>
