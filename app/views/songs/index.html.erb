@@ -1,6 +1,9 @@
-<h1>Songs</h1>
+<section class="container allsongs">
+  <div class="row text-center">
+    <h1>Songs</h1>
 
-<% @songs.each do |song| %>
-    <p><%= song.title %></p>
-    <p><%= song.year %></p>
-<% end %>
+    <% @songs.each do |song| %>
+      <p><%= link_to song.title, song %></p>
+    <% end %>
+  </div>
+</section>
