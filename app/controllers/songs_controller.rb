@@ -7,14 +7,15 @@ class SongsController < ApplicationController
     @song = Song.find(params[:id])
   end
 
-  def new
+  def news
     @song = Song.new
   end
 
   def create
      song_params = params.require( :song ).permit( :title, :year, :video, :artist_id )
 
-     @song = Song.new( song_params, user: current_user )
+     @song = Song.new( song_params )
+     @song.user = current_user
 
      if @song.save
         redirect_to songs_path

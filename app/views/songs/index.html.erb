@@ -4,7 +4,9 @@
 
     <% @songs.each do |song| %>
       <h3><%= link_to song.title, song %></h3>
-      <p>Added by: <%= link_to song.user.handle, user_songs_path( song.user ) %></p>
+      <% if song.user.present? %>
+        <p>Added by: <%= link_to song.user.handle, user_songs_path( song.user ) %></p>
+      <% end %>
       <br>
     <% end %>
 
