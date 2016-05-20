@@ -7,5 +7,5 @@
       <p>Added by: <%= link_to song.user.handle, user_songs_path( song.user ) %></p>
     <% end %>
 
-    <p><%= link_to "Listen", song %></p><br/>
+    <p><%= link_to "Listen", artist_song_path(@artist, song) %></p><br/>
 </div>

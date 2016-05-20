@@ -1,4 +1,4 @@
-<%= form_for Song.new do |f| %>
+<%= form_for @song, url: {action: "create"} do |f| %>
     <div class="input-group">
       <h1>Add a new Song</h1><br>
       <p>Song title: <%= f.text_field :title, class: "form-control" %></p>

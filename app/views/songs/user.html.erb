@@ -6,7 +6,7 @@
     <br>
 
     <% @songs.each do |song| %>
-    <p><%= link_to song.title, song %></p>
+    <p><%= link_to song.title, artist_song_path(song.id, song.user_id) %></p>
     <% end %>
   </div>
 </section>

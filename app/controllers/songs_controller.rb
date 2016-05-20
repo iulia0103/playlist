@@ -1,4 +1,5 @@
 class SongsController < ApplicationController
+
   def index
     @songs = Song.all
   end
@@ -7,7 +8,7 @@ class SongsController < ApplicationController
     @song = Song.find(params[:id])
   end
 
-  def news
+  def new
     @song = Song.new
   end
 
@@ -18,7 +19,7 @@ class SongsController < ApplicationController
      @song.user = current_user
 
      if @song.save
-        redirect_to songs_path
+        redirect_to "/artists/:artist_id/songs.id"
      else
         render 'new'
      end
@@ -29,7 +30,7 @@ class SongsController < ApplicationController
 
      @song.destroy
 
-     redirect_to songs_path
+     redirect_to "/artists/:artist_id/songs.id"
   end
 
 
