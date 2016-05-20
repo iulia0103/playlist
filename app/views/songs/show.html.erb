@@ -8,7 +8,7 @@
     <%= embed(@song.video) %>
 
     <% if user_signed_in? %>
-      <h3><%= link_to "[Delete]", song_path( @song.id ), method: :delete, data: { confirm: "Are you sure?" } %></h3>
+      <h3><%= link_to "[Delete]", artist_song_path( @song.artist_id, @song.id ), method: :delete, data: { confirm: "Are you sure?" } %></h3>
     <% end %>
   </div>
 </section>

@@ -3,7 +3,7 @@
     <h1>Songs</h1>
 
     <% @songs.each do |song| %>
-      <h3><%= link_to song.title, song %></h3>
+      <h3><%= link_to song.title, artist_song_path(song.artist_id, song.id) %></h3>
       <% if song.user.present? %>
         <p>Added by: <%= link_to song.user.handle, user_songs_path( song.user ) %></p>
       <% end %>
@@ -12,7 +12,7 @@
 
     <br>
     <% if user_signed_in? %>
-      <h3><%= link_to "[New Song]", new_song_path %></h3>
+      <h3><%= link_to "[New Song]", "/artists/:artist_id/songs/new" %></h3>
     <% end %>
   </div>
 </section>
