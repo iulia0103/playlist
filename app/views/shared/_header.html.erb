@@ -5,6 +5,8 @@
       <ul class="navbar no-bullets">
         <li><%= link_to "Home", root_path %></li>
 
+        <li><%= link_to "Artists", artists_path %></li>
+
         <li><%= link_to "Songs","/artists/:artist_id/songs.id" %></li>
 
         <% if !user_signed_in? %>

@@ -7,5 +7,5 @@ Rails.application.routes.draw do
 
   get 'user_songs/:user_id' => 'songs#user', as: :user_songs
 
-  root "artists#index"
+  root "artists#welcome"
 end
