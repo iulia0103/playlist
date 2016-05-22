@@ -5,7 +5,7 @@
 
       <div class="col-md-8">
         <div class="text">
-          <h2><%= @song.title %></h2>
+          <h2 class="animated pulse"><%= @song.title %></h2>
           <% if user_signed_in? %>
             <p><%= link_to "Delete Song", artist_song_path( @song.artist_id, @song.id ), method: :delete, data: { confirm: "Are you sure?" } %></p>
           <% end %>

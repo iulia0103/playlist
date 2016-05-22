@@ -1,13 +1,83 @@
 // Place all the styles related to the Songs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// All Songs Page
 .allsongs {
-  position: relative;
-  top: 130px;
+  background-image: url('http://res.cloudinary.com/dpwjutqio/image/upload/v1463921173/free-leather-wallpaper-1_wtwbnh.jpg');
+  background-repeat: no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
 }
 
-.allsongs p {
-  margin-bottom: 20px;
+.allsongs .container {
+  background: rgba(0, 0, 0, 0.75);
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.allsongs .alignment {
+  text-align: left;
+  margin-left: 45px;
+}
+
+.allsongs h2 {
+  color: white;
+  text-transform: red;
+}
+.allsongs .col-md-4 .stuff {
+  margin-bottom: 35px;
+  margin-top: 5px;
+}
+
+.allsongs .col-md-4 h3 a {
+  color: red;
+}
+
+.allsongs .col-md-4 h3 a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.allsongs .col-md-4 p {
+  color: white;
+}
+
+.allsongs .col-md-4 p a {
+  color: white;
+}
+
+.allsongs .col-md-4 p a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+.allsongs .col-md-4 .new a {
+  color: red;
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 3px 15px 3px 15px;
+}
+
+.allsongs .col-md-4 .new a:hover {
+  color: white;
+  border: 1px solid white;
+}
+
+.allsongs .col-md-4 input {
+  color: red;
+  border: 1px solid red;
+  border-radius: 10px;
+  margin-right: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.allsongs .col-md-4 input:hover {
+  color: white;
+  border: 1px solid white;
 }
 
 // Video Page
@@ -19,15 +89,17 @@
   -o-background-size:cover;
   background-size:cover;
   background-position:center;
+  height: 100vh;
 }
 
 .videoartist .container {
   background: rgba(0, 0, 0, 0.75);
+  padding-bottom: 30px;
 }
 
 iframe {
   margin-top: 30px;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
   height: 400px;
   width: 700px;
   border: none;
@@ -38,7 +110,7 @@ iframe {
 }
 
 .videoartist .col-md-8 .text {
-  margin-top: 25px;
+  margin-top: 40px;
   margin-bottom: 30px;
 }
 
