@@ -10,7 +10,7 @@
           <div class="stuff">
             <br>
             <%= form_tag("/artists/:artists_id/songs", :method => "get", id: "search-form") do %>
-              <%= text_field_tag :search, params[:search], placeholder: "  " %>
+              <%= text_field_tag :search, params[:search], placeholder: "  song title" %>
               <%= submit_tag "Search" %>
             <% end %>
 
