@@ -1,12 +1,14 @@
-<section class="container userprofile">
-  <div class="row text-center">
+<section class="userprofile">
+  <div class="container">
+    <div class="row text-center">
 
-    <h1><%= @user.handle %></h1>
+      <h2><%= @user.handle %></h2>
 
-    <br>
+      <br>
 
-    <% @songs.each do |song| %>
-    <p><%= link_to song.title, artist_song_path(song.id, song.user_id) %></p>
-    <% end %>
+      <% @songs.each do |song| %>
+      <h4 class="animated pulse"><%= link_to song.title, artist_song_path(song.id, song.user_id) %></h4>
+      <% end %>
+    </div>
   </div>
 </section>

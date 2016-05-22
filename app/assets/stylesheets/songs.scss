@@ -176,7 +176,39 @@ iframe {
   text-align: center;
 }
 
+// User PROFILE
 .userprofile {
-  position: relative;
-  top: 120px;
+  background-image: url('http://res.cloudinary.com/dpwjutqio/image/upload/v1463921173/free-leather-wallpaper-1_wtwbnh.jpg');
+  background-repeat: no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+  height: 100vh;
+}
+
+.userprofile .container {
+  background: rgba(0, 0, 0, 0.75);
+  height: 100vh;
+}
+
+.userprofile h2 {
+  color: white;
+  margin-top: 50px;
+  margin-bottom: -5px;
+}
+
+.userprofile h4 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.userprofile h4 a {
+  color: red;
+}
+
+.userprofile h4 a:hover {
+  color: white;
+  text-decoration: none;
 }
