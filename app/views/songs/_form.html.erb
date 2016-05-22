@@ -1,12 +1,26 @@
 <%= form_for @song, url: {action: "create"} do |f| %>
     <div class="input-group">
-      <h1>Add a new Song</h1><br>
-      <p>Song title: <%= f.text_field :title, class: "form-control" %></p>
-      <p>Release year: <%= f.text_field :year, class: "form-control" %></p>
-      <p>Youtube URL: <%= f.text_field :video, class: "form-control" %></p>
-      <p>Artist: <%= f.text_field :artist_id, class: "form-control" %></p>
-      <p>Queen: 1, Scorpions: 2, Guns N`Roses: 3</p>
-      <br>
-      <p><%= f.submit "Add Song" %></p>
+      <h2>Add a new Song</h2>
+
+      <div class="field">
+        <p>Song title: <%= f.text_field :title, class: "form-control" %></p>
+      </div>
+
+      <div class="field">
+        <p>Release year: <%= f.text_field :year, class: "form-control" %></p>
+      </div>
+
+      <div class="field">
+        <p>Youtube URL: <%= f.text_field :video, class: "form-control" %></p>
+      </div>
+
+      <div class="field">
+        <p>Artist: <%= f.text_field :artist_id, class: "form-control" %></p>
+        <p>Queen: 1, Scorpions: 2, Guns N`Roses: 3</p>
+      </div>
+
+      <div class="field-submit">
+        <p><%= f.submit "Add Song" %></p>
+      </div>
     </div>
 <% end %>

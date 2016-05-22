@@ -68,16 +68,11 @@
 }
 
 .allsongs .col-md-4 input {
-  color: red;
-  border: 1px solid red;
+  color: white;
+  border: 1px solid white;
   border-radius: 10px;
   margin-right: 10px;
   background: rgba(0, 0, 0, 0.1);
-}
-
-.allsongs .col-md-4 input:hover {
-  color: white;
-  border: 1px solid white;
 }
 
 // Video Page
@@ -132,18 +127,54 @@ iframe {
   text-decoration: none;
 }
 
+// New Song
+.newsong {
+  background-image: url('http://res.cloudinary.com/dpwjutqio/image/upload/v1463921173/free-leather-wallpaper-1_wtwbnh.jpg');
+  background-repeat: no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+}
+
+.newsong .container {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.newsong .col-md-4 {
+  margin-top: 70px;
+  margin-left: 20px;
+}
+
+.newsong .field {
+  color: white;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.newsong h2 {
+  color: red;
+}
+
+.newsong .field-submit input {
+  border: 1px solid red;
+  border-radius: 15px;
+  padding: 5px 20px 5px 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: red;
+}
+
+.newsong .field-submit input:hover {
+  border: 1px solid white;
+  color: white;
+}
+
 // rest
 .col-md-4 {
   margin-top: 20px;
   text-align: center;
 }
-
-.newsong {
-  position: relative;
-  top: 170px;
-  margin-left: 700px;
-}
-
 
 .userprofile {
   position: relative;
