@@ -30,6 +30,21 @@
   margin-top: 30px;
   margin-bottom: 50px;
   text-align: center;
+  cursor: pointer;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.container .logo:hover {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+    filter: grayscale(0%);
+  border: 1px solid red;
 }
 
 .artistimg {
@@ -39,9 +54,13 @@
   margin-bottom: 15px;
 }
 
-.owl-carousel .owl-item img {
-  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.owl-carousel{
   margin-top: 50px;
+  border-top: 1.7px solid red;
+  border-bottom: 1.7px solid red;
+}
+
+.owl-carousel .owl-item img {
   height: 450px;
   width: 650px;
   -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */

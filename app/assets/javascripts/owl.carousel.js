@@ -4,7 +4,7 @@ $(document).on("ready page:load", function(){
       items:2,
       center: true,
       loop:true,
-      margin:170,
+      margin:183,
       autoplay:true,
       autoplayTimeout:3000,
       autoplayHoverPause:true
