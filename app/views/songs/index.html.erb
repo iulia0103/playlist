@@ -1,18 +1,36 @@
-<section class="container allsongs">
-  <div class="row text-center">
-    <h1>Songs</h1>
+<section class="allsongs">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">&nbsp;</div>
 
-    <% @songs.each do |song| %>
-      <h3><%= link_to song.title, artist_song_path(song.artist_id, song.id) %></h3>
-      <% if song.user.present? %>
-        <p>Added by: <%= link_to song.user.handle, user_songs_path( song.user ) %></p>
-      <% end %>
-      <br>
-    <% end %>
+      <div class="col-md-4">
+        <div class="alignment">
+          <h2>All Songs</h2>
 
-    <br>
-    <% if user_signed_in? %>
-      <h3><%= link_to "[New Song]", "/artists/:artist_id/songs/new" %></h3>
-    <% end %>
+          <div class="stuff">
+            <br>
+            <%= form_tag("/artists/:artists_id/songs", :method => "get", id: "search-form") do %>
+              <%= text_field_tag :search, params[:search], placeholder: "  " %>
+              <%= submit_tag "Search" %>
+            <% end %>
+
+            <br>
+            <% if user_signed_in? %>
+              <p class="new"><%= link_to "Add New Song", "/artists/:artist_id/songs/new" %></p>
+            <% end %>
+          </div>
+
+          <% @songs.each do |song| %>
+            <h3 class="animated pulse"><%= link_to song.title, artist_song_path(song.artist_id, song.id) %></h3>
+            <% if song.user.present? %>
+              <p>Added by: <%= link_to song.user.handle, user_songs_path( song.user ) %></p>
+            <% end %>
+            <br>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="col-md-4">&nbsp;</div>
+    </div>
   </div>
 </section>
