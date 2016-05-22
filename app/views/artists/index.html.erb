@@ -1,13 +1,27 @@
-<section class="container allartists">
-  <div class="row text-center">
-    <h1>Artists</h1>
-  </div>
+<section class="allartists">
+  <div class="container">
+    <div class="row text-center">
+      <div class="owl-carousel">
+        <div>
+           <%= image_tag("http://res.cloudinary.com/dpwjutqio/image/upload/v1463864496/WDF_1000281_cckau6.jpg", class: "slide-img") %>
+        </div>
 
-  <div class="row">
-    <% @artists.each do |artist| %>
-      <div class="col-md-4">
-        <p><%= link_to image_tag(artist.logo, :class => "logo"), artist %></p>
+        <div>
+           <%= image_tag("http://res.cloudinary.com/dpwjutqio/image/upload/v1463864496/scorpions_band_members_pipe_valve_2487_3840x2400_pnhrac.jpg", class: "slide-img") %>
+        </div>
+
+        <div>
+           <%= image_tag("http://res.cloudinary.com/dpwjutqio/image/upload/v1463864702/idyKuYi_qyta89.jpg", class: "slide-img") %>
+        </div>
       </div>
+    </div>
+
+    <div class="row">
+      <% @artists.each do |artist| %>
+        <div class="col-md-4">
+          <p><%= link_to image_tag(artist.logo, :class => "logo"), artist %></p>
+        </div>
       <% end %>
     </div>
+  </div>
 </section>

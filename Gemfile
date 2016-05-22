@@ -49,3 +49,7 @@ group :development do
 end
 
 gem 'bootstrap-generators', '~> 3.3.4'
+
+gem 'animate-rails', '~> 1.0', '>= 1.0.10'
+
+gem 'owlcarousel2-rails'

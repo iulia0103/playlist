@@ -1,12 +1,12 @@
 
 header {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   position: fixed;
   bottom: 0px;
   left: 0px;
   width: 100%;
   height: 60px;
-  z-index: 1;
+  z-index: 999;
 }
 
 .no-bullets {
@@ -32,4 +32,6 @@ header {
 .navbar a:hover {
   color: red;
   text-decoration: none;
+  cursor: pointer;
+  color: white;
 }

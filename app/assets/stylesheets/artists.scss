@@ -1,9 +1,18 @@
 // Place all the styles related to the Artists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.allartists{
-  position: relative;
-  top: 170px;
+.allartists {
+  background-image: url('http://res.cloudinary.com/dpwjutqio/image/upload/v1463921173/free-leather-wallpaper-1_wtwbnh.jpg');
+  background-repeat: no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+}
+
+.allartists .container {
+  background: rgba(0, 0, 0, 0.75);
 }
 
 .artist {
@@ -16,8 +25,11 @@
 }
 
 .container .logo {
-  height: 370px;
-  width: 370px;
+  height: 360px;
+  width: 360px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 .artistimg {
@@ -25,4 +37,13 @@
   height: 400px;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.owl-carousel .owl-item img {
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 50px;
+  height: 450px;
+  width: 650px;
+  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
 }
