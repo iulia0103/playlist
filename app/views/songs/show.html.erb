@@ -1,14 +1,22 @@
-<section class="container videoartist">
-  <div class="row text-center">
-    <h1><%= @song.title %></h1>
+<section class="videoartist">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-2">&nbsp;</div>
 
-    <p>Band: <%= @song.artist.name %> </p>
-    <p>Year: <%= @song.year %></p>
+      <div class="col-md-8">
+        <div class="text">
+          <h2><%= @song.title %></h2>
+          <% if user_signed_in? %>
+            <p><%= link_to "Delete Song", artist_song_path( @song.artist_id, @song.id ), method: :delete, data: { confirm: "Are you sure?" } %></p>
+          <% end %>
+        </div>
+      </div>
 
-    <%= embed(@song.video) %>
+      <div class="col-md-2">&nbsp;</div>
+    </div>
 
-    <% if user_signed_in? %>
-      <h3><%= link_to "[Delete]", artist_song_path( @song.artist_id, @song.id ), method: :delete, data: { confirm: "Are you sure?" } %></h3>
-    <% end %>
+    <div class="row text-center">
+      <%= embed(@song.video) %>
+    </div>
   </div>
 </section>

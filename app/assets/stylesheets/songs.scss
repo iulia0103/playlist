@@ -10,17 +10,57 @@
   margin-bottom: 20px;
 }
 
+// Video Page
 .videoartist {
-  position: relative;
-  top: 100px;
+  background-image: url('http://res.cloudinary.com/dpwjutqio/image/upload/v1463921173/free-leather-wallpaper-1_wtwbnh.jpg');
+  background-repeat: no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
+}
+
+.videoartist .container {
+  background: rgba(0, 0, 0, 0.75);
 }
 
 iframe {
-  margin-top: 20px;
-  height: 500px;
-  width: 800px;
+  margin-top: 30px;
+  margin-bottom: 80px;
+  height: 400px;
+  width: 700px;
+  border: none;
 }
 
+.videoartist .col-md-8 {
+  border-bottom: 1px solid red;
+}
+
+.videoartist .col-md-8 .text {
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.videoartist h2 {
+  color: red;
+}
+
+.videoartist a {
+  color: red;
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 3px 15px 3px 15px;
+  margin-bottom: 40px;
+}
+
+.videoartist a:hover {
+  color: white;
+  border: 1px solid white;
+  text-decoration: none;
+}
+
+// rest
 .col-md-4 {
   margin-top: 20px;
   text-align: center;
