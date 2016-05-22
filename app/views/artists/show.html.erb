@@ -1,15 +1,14 @@
-<section class="container artist">
-  <div class="row text-center">
-    <h1><%= @artist.name %></h1>
-    <h4><%= @artist.country %></h4>
+<section class="single-artist">
+  <div class="container">
+    <div class="row text-center">
+      <h2><%= @artist.name %> playlist</h2>
 
-    <%= image_tag(@artist.image, :class => "artistimg")  %>
+      <%= image_tag(@artist.image, :class => "artistimg")  %>
+    </div>
 
-    <h2>Songs</h2>
-  </div>
-
-  <div class="row">
-    <% songs = @artist.songs.sort_by { |song| song.year } %>
-    <%= render songs, hide_artist: true %>
+    <div class="row">
+      <% songs = @artist.songs.sort_by { |song| song.year } %>
+      <%= render songs, hide_artist: true %>
+    </div>
   </div>
 </section>

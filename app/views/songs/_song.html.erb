@@ -1,11 +1,9 @@
 <div class="col-md-4">
-    <p>Year: <%= song.year %></p>
-
-    <p><%= song.title %></p>
+    <h4 class="inline"><%= song.title %></h4>
+    <p class="inline song-link"><%= link_to "Play", artist_song_path(@artist, song) %></p>
+    <p>Release year: <%= song.year %></p>
 
     <% if song.user.present? %>
-      <p>Added by: <%= link_to song.user.handle, user_songs_path( song.user ) %></p>
+      <p class="user-link">Added by: <%= link_to song.user.handle, user_songs_path( song.user ) %></p>
     <% end %>
-
-    <p><%= link_to "Listen", artist_song_path(@artist, song) %></p><br/>
 </div>
