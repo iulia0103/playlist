@@ -3,6 +3,6 @@ class Song < ActiveRecord::Base
   belongs_to :user
 
   def self.search(search)
-    where("title LIKE ?", "%#{search}%")
+    where("title ILIKE ?", "%#{search}%")
   end
 end
